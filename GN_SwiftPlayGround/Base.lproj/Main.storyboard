@@ -25,17 +25,8 @@
                                 <color key="textColor" red="1" green="0.5709328081843531" blue="0.12698697648480439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-vX-lGS">
-                                <rect key="frame" x="85" y="281" width="91" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <connections>
-                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rr5-ZM-quv"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQE-fD-k7M">
-                                <rect key="frame" x="238" y="281" width="91" height="154"/>
+                                <rect key="frame" x="216" y="61" width="80" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
@@ -44,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCF-dw-DGP">
-                                <rect key="frame" x="84" y="92" width="91" height="154"/>
+                                <rect key="frame" x="20" y="61" width="80" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
@@ -53,12 +44,93 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg4-q4-HYV">
-                                <rect key="frame" x="237" y="92" width="91" height="154"/>
+                                <rect key="frame" x="118" y="61" width="80" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
                                     <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rGt-Ir-uWO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFr-8Z-s6U">
+                                <rect key="frame" x="314" y="230" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIB-cW-YhC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljW-fg-Q70">
+                                <rect key="frame" x="216" y="230" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oCw-6s-I6H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i78-gy-XwX">
+                                <rect key="frame" x="20" y="230" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96E-B2-cXF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4X-u4-b1F">
+                                <rect key="frame" x="118" y="230" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DGM-Yx-qpy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMH-1E-Lbj">
+                                <rect key="frame" x="314" y="398" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acU-SI-hc2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atP-BT-vz0">
+                                <rect key="frame" x="216" y="398" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8O-bW-UK5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdb-kK-k4b">
+                                <rect key="frame" x="20" y="398" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7x-NR-Wnr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6if-Zl-cau">
+                                <rect key="frame" x="118" y="398" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V42-Ei-2Lc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-vX-lGS">
+                                <rect key="frame" x="314" y="61" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57093280820000003" blue="0.12698697649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="GN_TouchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rr5-ZM-quv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,6 +143,14 @@
                         <outletCollection property="GN_CardButtons" destination="Mg4-q4-HYV" collectionClass="NSMutableArray" id="fpD-HD-nhv"/>
                         <outletCollection property="GN_CardButtons" destination="bHD-vX-lGS" collectionClass="NSMutableArray" id="A9v-CP-aq3"/>
                         <outletCollection property="GN_CardButtons" destination="ZQE-fD-k7M" collectionClass="NSMutableArray" id="gYF-BW-KDT"/>
+                        <outletCollection property="GN_CardButtons" destination="i78-gy-XwX" collectionClass="NSMutableArray" id="GDF-cw-l18"/>
+                        <outletCollection property="GN_CardButtons" destination="ljW-fg-Q70" collectionClass="NSMutableArray" id="ucz-Z5-3Y2"/>
+                        <outletCollection property="GN_CardButtons" destination="Rdb-kK-k4b" collectionClass="NSMutableArray" id="3wb-e8-4cq"/>
+                        <outletCollection property="GN_CardButtons" destination="6if-Zl-cau" collectionClass="NSMutableArray" id="Sld-3q-DK7"/>
+                        <outletCollection property="GN_CardButtons" destination="XMH-1E-Lbj" collectionClass="NSMutableArray" id="D7F-US-cRT"/>
+                        <outletCollection property="GN_CardButtons" destination="u4X-u4-b1F" collectionClass="NSMutableArray" id="1zy-Rl-GGW"/>
+                        <outletCollection property="GN_CardButtons" destination="nFr-8Z-s6U" collectionClass="NSMutableArray" id="CJl-eY-C8V"/>
+                        <outletCollection property="GN_CardButtons" destination="atP-BT-vz0" collectionClass="NSMutableArray" id="8IS-R3-XiZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
