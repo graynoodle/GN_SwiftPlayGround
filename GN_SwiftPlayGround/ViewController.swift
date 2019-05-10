@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+
+    
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
     var numberOfPairsOfCards: Int {
@@ -27,6 +29,7 @@ class ViewController: UIViewController {
     }
 
     override func viewDidLoad() {
+
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
