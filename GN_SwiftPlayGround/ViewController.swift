@@ -11,7 +11,22 @@ import UIKit
 class ViewController: UIViewController {
     
 
-    
+    func reverseString(_ s: inout [Character]) {
+        
+        
+        
+        var first:Character = s[0]
+        var t:Character
+        for index in 1...s.count {
+            t = s[index]
+            s[index] = first
+            s[index - 1] = t
+            first = t
+            if index == s.count {
+                s[index] = t
+            }
+        }
+    }
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
     var numberOfPairsOfCards: Int {
@@ -29,7 +44,16 @@ class ViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-
+        var time = 10
+        print("time before add =\(time)")
+        
+        func addTime(_ t: inout Int, num: Int) {
+            t += num
+        }
+        
+        addTime(&time, num: 90)
+        
+        print("time after add = \(time)")
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -90,14 +114,14 @@ class ViewController: UIViewController {
     
     private var emojiChoices: Array<String> = ["🐉","🦑","🦞","🐇","👻","😈","🤡","👺"]
     
-    private var emoji = [Int:String]()
+    private var emoji = [Card:String]()
     private func emoji(for card: Card) -> String {
-            if emoji[card.identifier] == nil, emojiChoices.count > 0 {
+            if emoji[card] == nil, emojiChoices.count > 0 {
 //                let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
 //                emoji[card.identifier] = emojiChoices.remove(at:randomIndex)
-                emoji[card.identifier] = emojiChoices.remove(at:emojiChoices.count.arc4random)
+                emoji[card] = emojiChoices.remove(at:emojiChoices.count.arc4random)
             }
-            return emoji[card.identifier] ?? "?"
+            return emoji[card] ?? "?"
     }
 }
 
