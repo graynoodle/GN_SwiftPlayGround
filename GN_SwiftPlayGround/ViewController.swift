@@ -11,22 +11,22 @@ import UIKit
 class ViewController: UIViewController {
     
 
-    func reverseString(_ s: inout [Character]) {
-        
-        
-        
-        var first:Character = s[0]
-        var t:Character
-        for index in 1...s.count {
-            t = s[index]
-            s[index] = first
-            s[index - 1] = t
-            first = t
-            if index == s.count {
-                s[index] = t
-            }
-        }
-    }
+//    func reverseString(_ s: inout [Character]) {
+//
+//
+//
+//        var first:Character = s[0]
+//        var t:Character
+//        for index in 1...s.count {
+//            t = s[index]
+//            s[index] = first
+//            s[index - 1] = t
+//            first = t
+//            if index == s.count {
+//                s[index] = t
+//            }
+//        }
+//    }
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
     var numberOfPairsOfCards: Int {
@@ -39,26 +39,39 @@ class ViewController: UIViewController {
     
     private(set) var flipCount = 0 {
         didSet {
-            GN_FlipCountLabel.text = "Flips:\(flipCount)"
+            updateFlipCountLabel()
         }
     }
-
+    private func updateFlipCountLabel() {
+        let attributes: [NSAttributedString.Key:Any] = [
+            .strokeWidth : 5.0,
+            .strokeColor : #colorLiteral(red: 1, green: 0.5709328082, blue: 0.1269869765, alpha: 1)
+        ]
+        let attributedString = NSAttributedString(string: "Flips:\(flipCount)", attributes: attributes)
+        GN_FlipCountLabel.attributedText = attributedString
+    }
+    
+    
     override func viewDidLoad() {
-        var time = 10
-        print("time before add =\(time)")
-        
-        func addTime(_ t: inout Int, num: Int) {
-            t += num
-        }
-        
-        addTime(&time, num: 90)
-        
-        print("time after add = \(time)")
+//        var time = 10
+//        print("time before add =\(time)")
+//
+//        func addTime(_ t: inout Int, num: Int) {
+//            t += num
+//        }
+//
+//        addTime(&time, num: 90)
+//
+//        print("time after add = \(time)")
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBOutlet private weak var GN_FlipCountLabel: UILabel!
+    @IBOutlet private weak var GN_FlipCountLabel: UILabel! {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     @IBOutlet private var GN_CardButtons: [UIButton]!
     
     
@@ -112,14 +125,17 @@ class ViewController: UIViewController {
         }
     }
     
-    private var emojiChoices: Array<String> = ["🐉","🦑","🦞","🐇","👻","😈","🤡","👺"]
+//    private var emojiChoices: Array<String> = ["🐉","🦑","🦞","🐇","👻","😈","🤡","👺"]
+    private var emojiChoices = "🐉🦑🦞🐇👻😈🤡👺"
+
     
     private var emoji = [Card:String]()
     private func emoji(for card: Card) -> String {
             if emoji[card] == nil, emojiChoices.count > 0 {
 //                let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
 //                emoji[card.identifier] = emojiChoices.remove(at:randomIndex)
-                emoji[card] = emojiChoices.remove(at:emojiChoices.count.arc4random)
+                let randomStringIndex = emojiChoices.index(emojiChoices.startIndex, offsetBy: emojiChoices.count.arc4random)
+                emoji[card] = String(emojiChoices.remove(at:randomStringIndex))
             }
             return emoji[card] ?? "?"
     }

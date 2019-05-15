@@ -14,17 +14,26 @@ struct Concentration  {
      // optional
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
-            var foundIndex: Int?
-            for index in cards.indices {
-                if cards[index].isFaceUp {
-                    if foundIndex == nil {
-                        foundIndex = index
-                    } else {
-                        return nil
-                    }
-                }
-            }
-            return foundIndex
+            /*Closure  reference Type with Class*/
+//            let primes = [2.0, 3.0, 5.0, 7.0, 11.0]
+//            let negativePrimes = primes.map({ -$0 })
+//            let invertedPrimes = primes.map({ 1.0/$0 })
+//            let primesStrings = primes.map( { String($0)  } )
+            return cards.indices.filter { cards[$0].isFaceUp }.oneAndOnly
+//            let faceUpCardIndices = cards.indices.filter { cards[$0].isFaceUp }
+//            return faceUpCardIndices.count == 1 ? faceUpCardIndices.first : nil
+            
+//            var foundIndex: Int?
+//            for index in cards.indices {
+//                if cards[index].isFaceUp {
+//                    if foundIndex == nil {
+//                        foundIndex = index
+//                    } else {
+//                        return nil
+//                    }
+//                }
+//            }
+//            return foundIndex
         }
         set {
             for index in cards.indices {
@@ -69,5 +78,11 @@ struct Concentration  {
         }
         // TODO: Shuffle The Cards
         
+    }
+}
+
+extension Collection {
+    var oneAndOnly: Element? {
+        return count == 1 ? first : nil
     }
 }
