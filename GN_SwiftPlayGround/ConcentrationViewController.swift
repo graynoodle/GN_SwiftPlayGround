@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConcentrationViewController: UIViewController {
     
 
 //    func reverseString(_ s: inout [Character]) {
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     private func updateFlipCountLabel() {
         let attributes: [NSAttributedString.Key:Any] = [
             .strokeWidth : 5.0,
-            .strokeColor : #colorLiteral(red: 1, green: 0.5709328082, blue: 0.1269869765, alpha: 1)
+            .strokeColor : #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         ]
         let attributedString = NSAttributedString(string: "Flips:\(flipCount)", attributes: attributes)
         GN_FlipCountLabel.attributedText = attributedString
@@ -100,15 +100,17 @@ class ViewController: UIViewController {
     }
     
     func updateViewFromModel() {
-        for index in GN_CardButtons.indices {
-            let button = GN_CardButtons[index]
-            let card = game.cards[index]
-            if card.isFaceUp {
-                button.setTitle(emoji(for: card), for: UIControl.State.normal)
-                button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            } else {
-                button.setTitle("", for: UIControl.State.normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0): #colorLiteral(red: 1, green: 0.5709328082, blue: 0.1269869765, alpha: 1)
+        if GN_CardButtons != nil {
+            for index in GN_CardButtons.indices {
+                let button = GN_CardButtons[index]
+                let card = game.cards[index]
+                if card.isFaceUp {
+                    button.setTitle(emoji(for: card), for: UIControl.State.normal)
+                    button.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+                } else {
+                    button.setTitle("", for: UIControl.State.normal)
+                    button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0): #colorLiteral(red: 0.1349346978, green: 0.1767033571, blue: 0.8142608484, alpha: 1)
+                }
             }
         }
     }
@@ -126,6 +128,14 @@ class ViewController: UIViewController {
     }
     
 //    private var emojiChoices: Array<String> = ["🐉","🦑","🦞","🐇","👻","😈","🤡","👺"]
+    var theme: String? {
+        didSet {
+            emojiChoices = theme ?? ""
+            emoji = [:]
+            updateViewFromModel()
+        }
+    }
+    
     private var emojiChoices = "🐉🦑🦞🐇👻😈🤡👺"
 
     

@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F426015D22967C8D00CFE577 /* ConcentrationThemeChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426015C22967C8D00CFE577 /* ConcentrationThemeChooserViewController.swift */; };
 		F48151D92282BD2A0048BEA4 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48151D82282BD290048BEA4 /* Concentration.swift */; };
 		F48151DB2282BDEC0048BEA4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48151DA2282BDEB0048BEA4 /* Card.swift */; };
 		F48CB1A9228186BC0092BD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CB1A8228186BC0092BD4E /* AppDelegate.swift */; };
-		F48CB1AB228186BC0092BD4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CB1AA228186BC0092BD4E /* ViewController.swift */; };
+		F48CB1AB228186BC0092BD4E /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CB1AA228186BC0092BD4E /* ConcentrationViewController.swift */; };
 		F48CB1AE228186BC0092BD4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48CB1AC228186BC0092BD4E /* Main.storyboard */; };
 		F48CB1B0228186BD0092BD4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48CB1AF228186BD0092BD4E /* Assets.xcassets */; };
 		F48CB1B3228186BD0092BD4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48CB1B1228186BD0092BD4E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F426015C22967C8D00CFE577 /* ConcentrationThemeChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationThemeChooserViewController.swift; sourceTree = "<group>"; };
 		F48151D82282BD290048BEA4 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		F48151DA2282BDEB0048BEA4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F48CB1A5228186BC0092BD4E /* GN_SwiftPlayGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GN_SwiftPlayGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48CB1A8228186BC0092BD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F48CB1AA228186BC0092BD4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F48CB1AA228186BC0092BD4E /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 		F48CB1AD228186BC0092BD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F48CB1AF228186BD0092BD4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F48CB1B2228186BD0092BD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,10 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				F48CB1BA228186E40092BD4E /* GN_SupportingFiles */,
-				F48CB1AA228186BC0092BD4E /* ViewController.swift */,
+				F48CB1AA228186BC0092BD4E /* ConcentrationViewController.swift */,
 				F48151D82282BD290048BEA4 /* Concentration.swift */,
 				F48151DA2282BDEB0048BEA4 /* Card.swift */,
 				F48CB1AC228186BC0092BD4E /* Main.storyboard */,
+				F426015C22967C8D00CFE577 /* ConcentrationThemeChooserViewController.swift */,
 				F48CB1B4228186BD0092BD4E /* Info.plist */,
 			);
 			path = GN_SwiftPlayGround;
@@ -149,7 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48CB1AB228186BC0092BD4E /* ViewController.swift in Sources */,
+				F426015D22967C8D00CFE577 /* ConcentrationThemeChooserViewController.swift in Sources */,
+				F48CB1AB228186BC0092BD4E /* ConcentrationViewController.swift in Sources */,
 				F48CB1A9228186BC0092BD4E /* AppDelegate.swift in Sources */,
 				F48151D92282BD2A0048BEA4 /* Concentration.swift in Sources */,
 				F48151DB2282BDEC0048BEA4 /* Card.swift in Sources */,
@@ -299,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = X3GERCNEVE;
 				INFOPLIST_FILE = GN_SwiftPlayGround/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -318,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = X3GERCNEVE;
 				INFOPLIST_FILE = GN_SwiftPlayGround/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
